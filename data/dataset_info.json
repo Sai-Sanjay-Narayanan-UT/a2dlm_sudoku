@@ -1,0 +1,156 @@
+{
+  "cd4_train": {
+    "file_name": "cd4_train.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "cd4_test": {
+    "file_name": "cd4_test.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "cd5_train": {
+    "file_name": "cd5_train.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "cd5_test": {
+    "file_name": "cd5_test.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  
+  "cd3_train": {
+    "file_name": "cd3_train.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "cd3_test": {
+    "file_name": "cd3_test.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "cd4_tot24": {
+    "file_name": "cd4_tot24.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "sudoku_train": {
+    "file_name": "sudoku_train.csv",
+    "columns": {
+      "prompt": "quizzes",
+      "query": "",
+      "response": "solutions",
+      "history": ""
+    }
+  },
+  "sudoku_test": {
+    "file_name": "sudoku_test.csv",
+    "columns": {
+      "prompt": "quizzes",
+      "query": "",
+      "response": "solutions",
+      "history": ""
+    }
+  },
+  "path_train": {
+    "file_name": "path_train.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "path_test": {
+    "file_name": "path_test.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "3sat5_train": {
+    "file_name": "3sat5_train.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "3sat5_test": {
+    "file_name": "3sat5_test.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "3sat7_train": {
+    "file_name": "3sat7_train.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "3sat7_test": {
+    "file_name": "3sat7_test.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "3sat9_train": {
+    "file_name": "3sat9_train.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  },
+  "3sat9_test": {
+    "file_name": "3sat9_test.jsonl",
+    "columns": {
+      "prompt": "input",
+      "query": "",
+      "response": "output",
+      "history": ""
+    }
+  }
+}
