@@ -4,8 +4,8 @@ export WANDB_MODE=online
 exp=output/sudoku/mdm-alpha0.25-gamma1-bs1024-lr1e-3-ep300-T20-`date "+%Y%m%d-%H%M%S"`
 mkdir -p $exp
 
-CUDA_VISIBLE_DEVICES=0,1 \
-accelerate launch --multi_gpu --num_machines 1 --mixed_precision fp16 --num_processes 2 --main_process_port 20099 \
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+accelerate launch --multi_gpu --num_machines 1 --mixed_precision fp16 --num_processes 4 --main_process_port 20098 \
 src/train_bash.py \
     --stage mdm --overwrite_output_dir \
     --cache_dir ./cache \
@@ -26,17 +26,17 @@ src/train_bash.py \
     --eval_steps 100 \
     --save_steps 500 \
     --learning_rate 1e-3 \
-    --num_train_epochs 20.0 \
+    --num_train_epochs 300.0 \
     --plot_loss \
-    --run_name ${dataset}_mdm_testrun3_topkdecoding-True_tokenreweighting-True_time_reweighting-linear \
+    --run_name ${dataset}_mdlm_full_run_1_topkdecoding-True \
     --preprocessing_num_workers 8 \
     --fp16 \
     --save_total_limit 1 \
     --remove_unused_columns False \
     --diffusion_steps 20 \
     --save_safetensors False \
-    --token_reweighting True \
-    --time_reweighting linear \
+    --token_reweighting False \
+    --time_reweighting original \
     --topk_decoding True \
     --alpha 0.25 \
     --gamma 1 \

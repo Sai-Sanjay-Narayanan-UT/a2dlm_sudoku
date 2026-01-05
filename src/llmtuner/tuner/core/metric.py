@@ -107,5 +107,13 @@ def compute_acc(eval_preds: Sequence[Union[np.ndarray, Tuple[np.ndarray]]], toke
             pred = pred[:len(label)] # chess only take next move
 
             score_dict["acc"].append(pred==label)
+            
+            # Add partial accuracy: fraction of tokens that match
+            if len(label) > 0:
+                num_correct = sum(1 for p, l in zip(pred, label) if p == l)
+                partial_acc = num_correct / len(label)
+            else:
+                partial_acc = 0.0
+            score_dict.setdefault("partial_acc", []).append(partial_acc)
 
     return {k: float(np.mean(v)) for k, v in score_dict.items()}

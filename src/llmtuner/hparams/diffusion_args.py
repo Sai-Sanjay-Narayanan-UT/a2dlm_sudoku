@@ -33,6 +33,14 @@ class DiffusionArguments:
         default=False,
         metadata={"help": "use focal loss for token-level reweighting"}
     )
+    kappa: float = field(
+        default=0.5,
+        metadata={"help": "A2DLM: hyperparameter controlling separation between regular/important tokens"}
+    )
+    sigma_noise: float = field(
+        default=0.1,
+        metadata={"help": "A2DLM: Gaussian variance scaling for stochastic masking"}
+    )
 
     def __post_init__(self):
         pass
