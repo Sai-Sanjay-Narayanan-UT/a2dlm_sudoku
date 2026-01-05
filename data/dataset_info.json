@@ -81,6 +81,33 @@
       "history": ""
     }
   },
+    "sudoku_train_large": {
+    "file_name": "sudoku_train_large.csv",
+    "columns": {
+      "prompt": "quizzes",
+      "query": "",
+      "response": "solutions",
+      "history": ""
+    }
+  },
+  "sudoku_test_large": {
+    "file_name": "sudoku_test_large.csv",
+    "columns": {
+      "prompt": "quizzes",
+      "query": "",
+      "response": "solutions",
+      "history": ""
+    }
+  },
+  "my_puzzle": {
+    "file_name": "my_puzzle.csv",
+    "columns": {
+      "prompt": "quizzes",
+      "query": "",
+      "response": "solutions",
+      "history": ""
+    }
+  },
   "path_train": {
     "file_name": "path_train.jsonl",
     "columns": {
